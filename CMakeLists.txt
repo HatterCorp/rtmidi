@@ -20,11 +20,6 @@ if(JACK_LIB OR jack_FOUND)
   set(HAVE_JACK TRUE)
 endif()
 
-# Necessary for Windows
-if(WIN32)
-  set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
-endif()
-
 # Standard CMake options
 option(BUILD_SHARED_LIBS "Build as shared library" ON)
 
